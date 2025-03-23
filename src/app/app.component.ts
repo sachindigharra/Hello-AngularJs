@@ -8,21 +8,38 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-// we cannot define the variable directly in class 
+ 
 export class AppComponent {
   title = 'Hello jii';
-  // example let x=2;
-
-  // this function called when click Event Occur 
-  handleClickEvent(){
-    alert("yoou click that Button")
-    //call the method of own class
-    this.demoFun();
+  Counter=0;
+  // seprate fun for each Event
+  handleDecrementClick(){
+    if(this.Counter>0)this.Counter = this.Counter-1;
+    else{
+      this.Counter=0;
+    }
+    
   }
-  demoFun(){
-    console.log("Hii Angular js")
+  handleIncrementClick(){
+    this.Counter = (this.Counter+1);
+  }
+  handleResettClick(){
+    this.Counter = 0;
+  }
+  handleCounterEvent(val:String){
+    if(val=="plus"){
+      this.Counter = (this.Counter+1);
+    }
+    else if(val=="minus" && this.Counter>0){
+      this.Counter = this.Counter-1;
+    }
+    else{
+      this.Counter=0;
+    }
+
   }
 
+ 
 
   
 }

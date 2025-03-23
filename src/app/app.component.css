@@ -1,0 +1,83 @@
+.btn {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+.btn-increment{
+    font-weight: 600;
+    font-size: x-large;
+    background-color: rgb(27, 188, 27);
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid green;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.btn-decrement{
+    font-weight: 600;
+    font-size: x-large;
+    background-color: rgb(233, 46, 46);
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid rgb(211, 25, 62);
+   border-radius: 50%;
+   cursor: pointer;
+}
+.btn:after {
+    content: "";
+    background: #cbd8cb;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+.container{
+    margin-top: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.Counter-items{
+    padding: 5px;
+    margin: 5px;
+}
+.btn-reset{
+    border-radius: 5px;
+    background-color: #cbd8cb;
+}
+.btn:hover{
+    border: 2px solid black;
+}
+.Counter-screen{
+    background-color: rgb(195, 195, 195);
+    padding: 5px;
+
+    width: 175px;
+    text-align: center;
+    border-radius: 5px;
+    
+}

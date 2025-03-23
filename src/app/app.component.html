@@ -1,2 +1,10 @@
-<h1>Hello Angular js</h1>
-<h2>{{title}}</h2>
+<h1>Counter App</h1>
+<div class="container">
+  <h2 class="Counter-items Counter-screen">Counter :{{Counter}}</h2>
+
+  <div>
+    <button class="btn btn-decrement Counter-items" (click)="handleCounterEvent('minus')">-1</button>
+    <button class="btn btn-reset Counter-items" (click)="handleCounterEvent('reset')">Reset</button>
+    <button class="btn btn-increment Counter-items" (click)="handleCounterEvent('plus')">+1</button>
+  </div>
+</div>
