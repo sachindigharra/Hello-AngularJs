@@ -1,2 +1,14 @@
 <h1>Hello Angular js</h1>
 <h2>{{title}}</h2>
+<input type="text" name="username" (input)="setValue($event)">
+<h2>username:{{Value}}</h2>
+<br>
+<hr>
+<!-- Pass Elemnet Value as parameter in Function to Component file -->
+ <input type="email" name="user-email" #emailField>
+
+ <br>
+ <hr>
+<h2>Email:{{email}}</h2>
+ <button (click)="getEmail(emailField.value)">Get Mail</button>
+ <button>Set Mail</button>

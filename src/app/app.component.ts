@@ -10,19 +10,20 @@ import { RouterOutlet } from '@angular/router';
 })
 // we cannot define the variable directly in class 
 export class AppComponent {
-  title = 'Hello jii';
-  // example let x=2;
+  title = 'Get & Set Value of Input Field';
 
-  // this function called when click Event Occur 
-  handleClickEvent(){
-    alert("yoou click that Button")
-    //call the method of own class
-    this.demoFun();
-  }
-  demoFun(){
-    console.log("Hii Angular js")
-  }
+  Value:any;
+ email:String='';
 
+  setValue(event:any){
+    this.Value = (event.target as HTMLInputElement).value;
+  }
+  getEmail(email:String){
+    this.email=email;
+    console.log(email);
+  
+  }
+  
 
   
 }
