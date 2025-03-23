@@ -14,4 +14,9 @@ import { ProfileComponent } from './porfile/profile.component';
 export class AppComponent {
   title = 'Hello jii';
   // example let x=2;
+
+  // this function called when click Event Occur i.e means if button is pressed
+  handleClickEvent(){
+    alert("yoou click that Button")
+  }
 }
