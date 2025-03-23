@@ -9,7 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 // we cannot define the variable directly in class 
+
 export class AppComponent {
+
   title = 'Hello jii';
   // example let x=2;
 
@@ -20,9 +22,26 @@ export class AppComponent {
     this.demoFun();
   }
   demoFun(){
-    console.log("Hii Angular js")
+    console.log(this.name)
+    console.log(this.name.toUpperCase())
+
   }
 
+  //data container divide into two 
+  // var 
+  // properties or Data member of Class
 
+  // Define type of var or Porperties 
+  name:String='sachin';
+  username="Hiii"; 
+
+  //Multiple dataypes
+
+  data:String|Boolean|Object="sa"
+
+  Val:any;// it can holds any datatypes Value
   
 }
+let age =18;
+
+
