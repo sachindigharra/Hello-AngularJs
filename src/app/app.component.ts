@@ -23,6 +23,11 @@ export class AppComponent {
     console.log("Hii Angular js")
   }
 
+  // Parameterized Function 
+  Sum(a:number,b:number){
+    alert(a+b)
+  }
+
 
   
 }
