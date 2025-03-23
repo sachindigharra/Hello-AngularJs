@@ -1,2 +1,28 @@
 <h1>Hello Angular js</h1>
 <h2>{{title}}</h2>
+<!-- Events -> Action perfomm of Ui/ux know as Events -->
+
+
+<!-- Mouse Click Event -->
+<button class="btn" name="click-event btn" (click)="handleClick($event)">click</button>
+
+<!-- Mouse Enter Event -> when Cursor of Mouse come Over the html Action Mouse Enter Event occurr -->
+
+<!-- Mouse Leave Event-> this Event Always occur After Mouse Enter Event Event -->
+
+<div
+  style="width: 100px;; height: 100px;; background-color: antiquewhite;"
+  (mouseenter)="handleEvent($event)"
+
+  (mouseleave)="handleEvent($event)" >
+  Mouse Enter Event Example
+</div>
+<!-- Input Event-> change the Value from intial State it will occur -->
+
+<!-- On Change -> fisrt Focus Event with change and then blur event it is nesscessary to that Event  -->
+
+
+<input type="text" name="username" (change)="handleChangeEvent($event)" (input)="handleChangeEvent($event)">
+
+
+
